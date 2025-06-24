@@ -39,17 +39,17 @@
 
         left {
             bindings = <&mkp MB1>;
-            key-positions = <17 18>;
+            key-positions = <18 19>;
         };
 
         middle {
             bindings = <&mkp MB3>;
-            key-positions = <18 19>;
+            key-positions = <19 20>;
         };
 
         right {
             bindings = <&mkp MB2>;
-            key-positions = <20 19>;
+            key-positions = <20 21>;
         };
     };
 
