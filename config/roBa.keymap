@@ -36,6 +36,21 @@
             bindings = <&kp EQUAL>;
             key-positions = <24 25>;
         };
+
+        left {
+            bindings = <&mkp MB1>;
+            key-positions = <17 18>;
+        };
+
+        middle {
+            bindings = <&mkp MB3>;
+            key-positions = <18 19>;
+        };
+
+        right {
+            bindings = <&mkp MB2>;
+            key-positions = <20 19>;
+        };
     };
 
     macros {
@@ -56,6 +71,13 @@
             #binding-cells = <2>;
             tapping-term-ms = <30>;
         };
+
+        new_behavior: new_behavior {
+            compatible = "zmk,behavior-sensor-rotate-var";
+            label = "NEW_BEHAVIOR";
+            #sensor-binding-cells = <2>;
+            bindings = <&none>, <&none>;
+        };
     };
 
     keymap {
@@ -69,7 +91,7 @@
 &kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 6 INT_KPJPCOMMA  &lt 2 SPACE  &lt_to_layer_0 3 INT_MUHENKAN      &kp BACKSPACE        &lt 1 ENTER                             &kp DEL
             >;
 
-            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
+            sensor-bindings = <&new_behavior 0 0>;
         };
 
         FUNCTION {
