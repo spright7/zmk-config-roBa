@@ -24,12 +24,12 @@ layers:
   - L
   - ''''
   - {t: Z, h: LEFT SHIFT}
-  - X
+  - {t: X, h: LEFT SHIFT}
   - C
   - V
   - B
-  - ':'
-  - ;
+  - {t: '=', h: +}
+  - {t: ;, h: ':'}
   - N
   - M
   - ','
@@ -38,12 +38,12 @@ layers:
   - LCTRL
   - LEFT WIN
   - LEFT ALT
-  - {t: '&to_layer_0 INT_HENKAN', h: '6'}
+  - {t: '&to_layer_0 INT_KPJPCOMMA', h: '6'}
   - {t: SPACE, h: NUM}
   - {t: '&to_layer_0 INT_MUHENKAN', h: ARROW}
   - BACKSPACE
   - {t: ENTER, h: FUNCTION}
-  - DEL
+  - {t: DEL, h: ESCAPE}
   FUNCTION:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -93,7 +93,7 @@ layers:
   - KP 7
   - KP 8
   - KP 9
-  - +
+  - '='
   - ^
   - '&'
   - '~'
@@ -116,7 +116,7 @@ layers:
   - KP 2
   - KP 3
   - .
-  - '='
+  - +
   - {t: ▽, type: trans}
   - '['
   - ']'
@@ -149,7 +149,7 @@ layers:
   - RIGHT ARROW
   - END
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - VOLUME UP
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -161,7 +161,7 @@ layers:
   - Gui+Sft+RIGHT ARROW
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - VOL DN
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -266,9 +266,9 @@ layers:
   - {t: ▽, type: trans}
   '6':
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - KP 7
+  - KP 8
+  - KP 9
   - {t: ▽, type: trans}
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
@@ -276,21 +276,21 @@ layers:
   - {t: BT, h: '3'}
   - {t: BT, h: '4'}
   - {t: ▽, type: trans}
+  - KP 4
+  - KP 5
+  - KP 6
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - KP NUMLOCK
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '1'
-  - '2'
-  - '3'
+  - KP 0
+  - KP 1
+  - KP 2
+  - KP 3
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&bootloader'
@@ -315,7 +315,11 @@ combos:
   k: Sft+TAB
 - p: [11, 10]
   k: '&to_layer_0 INT_MUHENKAN'
-- p: [20, 21]
-  k: '"'
 - p: [24, 25]
   k: '='
+- p: [18, 19]
+  k: '&mkp MB1'
+- p: [19, 20]
+  k: '&mkp MB3'
+- p: [20, 21]
+  k: '&mkp MB2'
